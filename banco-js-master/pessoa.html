@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema Bancário</title>
+</head>
+<body>
+    <h1>Cadastro de Pessoa</h1>
+    <form>
+        <select name="tipoPessoa" id="tipoPessoa">
+            <option value="pessoa-fisica" selected >Pessoa Física</option>
+            <option value="pessoa-juridica">Pessoa Jurídica</option>
+        </select> <br>
+        Nome: <input id="nome"> <br>
+        Idade: <input id="idade"> <br>
+        Data de Nascimento: <input type="date" id="dataNascimento">
+        <button onclick="pessoaController.inserir(event)">Inserir</button>
+    </form>
+
+    <script src="app/js/modelo/pessoa.js"></script>
+    <script src="app/js/modelo/pessoa-fisica.js"></script>
+    <script src="app/js/modelo/pessoa-juridica.js"></script>
+    <script src="app/js/modelo/repositorio-pessoas.js"></script>
+    <script src="app/js/controlador/pessoa-controller.js"></script>
+    <script src="app/js/script.js"></script>
+</body>
+</html>
